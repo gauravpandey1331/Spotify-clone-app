@@ -1,0 +1,100 @@
+                 <!--HTML is case insensitive language means we can either use H1 or h1 doesn't matter--> 
+                 
+                 <!--This is know as BoilerPlate of Html which is required for every Html Page -->
+<!DOCTYPE html>      <!--It specifies this is an Html5 doc-->
+
+<html lang="en">          <!--Root of a  Html Page-->
+
+<head>                 <!--contains page meta data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">   <!--We have linked style.css file using link tag-->
+
+    <title>Spotify~Your way of Listening</title>           <!--Contains Title of a Project as per User Requirment-->
+</head>
+
+<body>          <!--The main Body of the page-->
+    
+     <nav>          <!--Navigation Bar-->
+        <ul>          <!--Unordered List-->
+           <li class="BrandLogo"><img src="photo/logo.png" alt="Spotify"><span class="gp"> Spotify </span></li>  <!--here we have added images--> <!--span is a inline container -->
+            <li>  Home  </li>         <!--List Name-->
+            <li>  About </li>         <!--List Name-->
+        </ul>
+     </nav>
+      
+     <div class="container"> <!--here div tag is having classname 'container'--> <!--div tag often used as a container for other elements. Div is block level element-->
+        <div class="songList">
+            <h1>Best of NCS - No Copyright Sounds </h1> <!--Heading Tag-->
+            <div class="songListContainer">
+                <div class="SongItem">
+                    <img src="photo/1.jpg" alt="1">
+                    <span class="songName">Jug Jug Jeeve</span>
+                    <span class="SongListPlay"><span class="timespan">03:19 <i id="0" class="far songItemPlay fa-play-circle"> </i> </span></span>
+                </div>
+                <div class="SongItem">
+                    <img src="photo/2.jpg" alt="1">
+                    <span class="songName">Aam Jahe Munde</span>
+                    <span class="SongListPlay"><span class="timespan">03:27 <i id="1" class="far songItemPlay fa-play-circle"> </i> </span></span>
+                </div>
+                <div class="SongItem">
+                    <img src="photo/3.jpg" alt="1">
+                    <span class="songName">Ishare Tere Karti Nigah</span>
+                    <span class="SongListPlay"><span class="timespan">02:52 <i id="2" class="far songItemPlay fa-play-circle"> </i> </span></span>
+                </div>
+                <div class="SongItem">
+                    <img src="photo/4.jpg" alt="1">
+                    <span class="songName">Legend</span>
+                    <span class="SongListPlay"><span class="timespan">04:38 <i id="3" class="far songItemPlay fa-play-circle"> </i> </span></span>
+                </div>
+                <div class="SongItem">
+                    <img src="photo/5.jpg" alt="1">
+                    <span class="songName">Selfmade</span>
+                    <span class="SongListPlay"><span class="timespan">02:59 <i id="4" class="far songItemPlay fa-play-circle"> </i> </span></span>
+                </div>
+                <div class="SongItem">
+                    <img src="photo/6.jpg" alt="1">
+                    <span class="songName">Outlaw</span>
+                    <span class="SongListPlay"><span class="timespan">02:57 <i id="5" class="far songItemPlay fa-play-circle"> </i> </span></span>
+                </div>
+                <div class="SongItem">
+                    <img src="photo/7.jpg" alt="1">
+                    <span class="songName">Never Fold</span>
+                    <span class="SongListPlay"><span class="timespan">03:00 <i id="6" class="far songItemPlay fa-play-circle"> </i> </span></span>
+                </div>
+                <div class="SongItem">
+                    <img src="photo/8.jpg" alt="1">
+                    <span class="songName">Jatt Da Muqabala</span>
+                    <span class="SongListPlay"><span class="timespan">03:31 <i id="7" class="far songItemPlay fa-play-circle" > </i> </span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+     </div>
+   
+   
+   
+   
+   
+   
+    <div class="bottom">   <!--footer section with classname 'button'-->
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">   <!--Progress Bar--> <!--kept the initial 'value' of 'myprogressbar' as '0'-->
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>   <!--All these from font-Awesome.--> 
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="playinggif">
+            <img src="photo/playing.gif" width="75x" height="32px" id="gif"> <span id="masterSongName"> Jug Jug Jeeve ~ Sachet Tandon</span>
+        </div>
+    </div>
+
+   
+
+
+    <script src="https://kit.fontawesome.com/1349dcc50c.js" crossorigin="anonymous"></script> <!--Connecting with font awesome link -->
+    <script src="script.js"></script>  <!--connected with 'script.js' file-->
+</body>
+</html>

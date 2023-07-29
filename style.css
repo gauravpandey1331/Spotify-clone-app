@@ -1,0 +1,182 @@
+  @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Oswald:wght@300&family=Sofia+Sans+Extra+Condensed&display=swap');
+  /* 1st Font Style  for font family. Copied from Google font*/
+
+  @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Oswald:wght@300&family=Sofia+Sans+Extra+Condensed&family=Ubuntu:ital,wght@1,300&display=swap');
+   /*2nd Font Style for font family*/
+
+   @import url('https://fonts.googleapis.com/css2?family=Anton&family=DynaPuff&family=Oswald:wght@300&family=Sofia+Sans+Extra+Condensed&family=Ubuntu:ital,wght@0,700;1,300&display=swap');
+   /*3rd Font Style for font family*/
+  
+   body{
+    background-color: antiquewhite;       
+}
+
+*{
+    margin: 0;        /*Margin is used to provide space from outside. Here we have made it 0*/
+
+    padding: 0;        /*Padding is used to provide space from Inside. Here we have made it 0*/
+  }
+
+nav{
+ font-family: 'Ubuntu', sans-serif ;   /*For giving style to the text using name of font-family as mentioned above*/
+
+}
+
+nav ul{
+    display: flex;       /*Using this we can bring all the list item present in a 'ul' in a same line Horizontally*/
+
+    list-style-type: none;     /*Using this we successfully removed the 'Dot' before the list item, as we have used 'ul' in a HTML Code*/
+
+    height: 65px;   /*Height of a 'nav ul' where all the 'li' are present*/
+
+    background-color: black;   /*background of a 'nav ul' is black in a color*/
+
+    align-items: center;          /*Bringing all the item to the center*/
+
+    color: white;            /*Adding the Text color*/
+
+}
+
+nav ul li{
+    padding: 0px 15px;   /*Giving space bettween the 'Items' of a 'li' i.e Home, About*/
+    cursor: pointer;
+}
+
+.BrandLogo .gp{
+    color: #1ed760;  /*adding color to the text ''Spotify*/
+} 
+
+.BrandLogo img{
+    width: 57px;      /*Changing th size of a logo*/
+
+    padding: 0 8px;  /* giving space from (top&bottom i.e 0) and (left&right i.e 8px)   to logo*/
+}
+.BrandLogo{
+    display: flex;     /*To display the text 'Spotify' in the same line*/
+
+    align-items: center;   /*To display the text 'Spotify' in the center*/
+
+    font-weight: bolder;    /*To display the text 'Spotify' more bolder*/
+
+    font-size: 1.4rem;       /*To increse the text-size of 'Spotify' */
+
+    font-family: 'Oswald';     /*To add the text font-style of 'Spotify'*/
+
+}
+
+.container{          /*Making changes in a div tag of 'container class'*/
+
+    min-height: 72vh;    /*Setting up its minimum height so that other things could get adjusted easily*/
+    
+    background-color: black; /*Background colour*/
+
+    color: white;   /*color of text*/
+
+    font-family: 'ubuntu', sans-serif;  /*To give some design to text*/
+    
+    display: flex;     /*To bring all the items horizontally we use it */
+ 
+    margin: 23px auto;   /*To adjust the space from outside we used margin. with (top and bottom i.e 23px) & (auto for left and right to adjust it into the center)*/
+
+    width: 70%;    /*To allot the portion of a total background. whole black portion in a rectangular size*/
+
+    border-radius: 12px;   /*To make the edge, curve we used border radius */
+
+    padding: 34px;   /*To give space inside. space will be alotted in the text portion*/ 
+
+    background-image: url('photo/bg.jpg');  /*Adding the background images*/
+     
+    background-size: 100%;   /*Adjusting the size of a background*/
+
+}
+
+.bottom{
+    position: sticky;    /*to make the bottom  sticky*/
+
+    bottom: 0;    /*to move the div of 'bottom class' downward and fix it */
+
+    height: 130px;     /*setting up the height of a 'bottom class'*/
+
+    background-color: black;  /*Giving the background color of a bottom class */
+
+    color: white;         /*Giving color to the icons */
+     
+    display: flex;             /*To bring all the items horizontally we use it.*/
+
+    justify-content: center;        /*To adjust the myprogressbar in between the  center of a bottom class */
+
+    align-items: center;         /*To adjust the myprogressbar in the center*/
+
+    flex-direction: column;   /*To brought the icons downward we use flex-direction as columm*/
+    
+}
+
+#myProgressBar{    /*here 'myprogressbar' is a ID thatswhy we have used '#' before Id*/
+
+    width: 80vw;   /*Increased the width of a myprogressbar*/ /*Here vw is viewport width*/
+    
+    cursor: pointer; /*using this our cursor will act as a pointer, when it moves to the icons */
+}
+
+.icons{
+    margin-top: 10px;  /*To provide space between myprogressbar and icons we used margin-top*/
+}
+
+.icons i{
+    cursor: pointer;  /*using this our cursor will act as a pointer, when it moves to the icons */
+  }
+
+  .SongItem{
+       height: 45px;   /*Height of box where song details are present*/
+
+       display: flex;  /*To dispaly all the items horizontally*/
+
+       background-color: white;    /*Background is made white*/
+       
+       color: black;    /*Color of a text is Black*/
+
+       border-radius: 20px;   /*we have made the corner of box as a curve using this*/
+
+       margin: 12px 0;        /*setting the position of a box from outside. with (top-bottom as 12px) and (left-right as 0)*/
+
+       justify-content: space-around;  /*To give the space in between the text*/
+
+       align-items: center;            /*To place the items in the center*/ 
+
+       cursor: pointer;     /*using this our cursor will act as a pointer, when it moves to the icons */
+
+       transition: 0.3s ease-in-out;   /*Using this the transistion will take ease-in - specifies a transition effect with a slow start. ease-out - specifies a transition effect with a slow end. */
+  }   
+
+  .songListContainer{
+    margin-top: 24px;   /*To provide the margin between the songList and songItem from top*/ 
+  }
+
+  .SongItem img{
+    height: 42px;        /*Height of a box where song are kept*/
+
+    width: 42px;          /*Width of a box where song are kept*/
+
+    border-radius: 34px;    /*To make the corner of a box circular */
+
+    margin: 0 23px;     /*To provide the margin from outside with (0px in top-bottom) and (23px in left-right)*/     
+  }
+
+  .SongItem:hover {
+	transform: scale(0.9);    /*Equal to scaleX(0.9) scaleY(0.9)---->It means the box will move with 0.9 in scale x-y direction*/
+
+    background-color: #ea3457;   /*Adding color of a background when we click it, it changes*/
+  }
+
+  .playinggif{
+    position: absolute;    /*Setting up the image position. using absolute to */
+    left: 10vw;            /*Setting up the position of an item from left*/
+  }
+
+  .playinggif img{
+        opacity: 0;  /*using opacity is equal to 0, we have hidden the img*/
+        transition: opacity 0.4s ease-in;   /*we have made transistion on opacity. with 2s ease-in due to which transistion effect will start with 2s*/
+         /*if opacity is 0 then no transistion but when we change it to 1 then transistion will take place of img. */
+         /*Initially it will be zero. but we will make it to 1 using javascript*/
+    }                                      
+
